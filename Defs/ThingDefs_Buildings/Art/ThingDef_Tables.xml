@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="TableGatherSpotBase">
+		<defName>O21_ST_Table1x2c</defName>
+		<label>federation table (1x2)</label>
+		<graphicData>
+			<texPath>Things/Building/Federation/Decor/DeskRect_Small</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(4,4)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<uiIconScale>0.8</uiIconScale>
+		<statBases>
+			<MaxHitPoints>75</MaxHitPoints>
+			<WorkToBuild>750</WorkToBuild>
+			<Mass>10</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>0.5</Beauty>
+		</statBases>
+		<size>(1,2)</size>
+		<costStuffCount>28</costStuffCount>
+		<designationCategory>O21_ST_StarTrek</designationCategory>
+	</ThingDef>
+
+	<ThingDef ParentName="TableGatherSpotBase">
+		<defName>O21_ST_Table2x2c</defName>
+		<label>federation table (2x2)</label>
+		<graphicData>
+			<texPath>Things/Building/Federation/Decor/Desk_Medium</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(4,4)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<uiIconScale>0.8</uiIconScale>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>1500</WorkToBuild>
+			<Mass>20</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>1</Beauty>
+		</statBases>
+		<size>(2,2)</size>
+		<costStuffCount>50</costStuffCount>
+		<rotatable>false</rotatable>
+		<designationCategory>O21_ST_StarTrek</designationCategory>
+	</ThingDef>
+
+	<ThingDef ParentName="TableGatherSpotBase">
+		<defName>O21_ST_Table2x4c</defName>
+		<label>federation table (2x4)</label>
+		<graphicData>
+			<texPath>Things/Building/Federation/Decor/DeskRect_Large</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(6,6)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>3000</WorkToBuild>
+			<Mass>24</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>2</Beauty>
+		</statBases>
+		<size>(2,4)</size>
+		<costStuffCount>95</costStuffCount>
+		<building>
+			<buildingSizeCategory>Medium</buildingSizeCategory>
+		</building>
+		<designationCategory>O21_ST_StarTrek</designationCategory>
+	</ThingDef>
+
+	<ThingDef ParentName="TableGatherSpotBase">
+		<defName>O21_ST_Table3x3c</defName>
+		<label>federation table (3x3)</label>
+		<graphicData>
+			<texPath>Things/Building/Federation/Decor/Desk_Huge</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(5, 5)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<uiIconScale>0.9</uiIconScale>
+		<statBases>
+			<MaxHitPoints>175</MaxHitPoints>
+			<WorkToBuild>3300</WorkToBuild>
+			<Mass>30</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>2</Beauty>
+		</statBases>
+		<size>(3,3)</size>
+		<costStuffCount>100</costStuffCount>
+		<rotatable>false</rotatable>
+		<building>
+			<buildingSizeCategory>Medium</buildingSizeCategory>
+		</building>
+		<designationCategory>O21_ST_StarTrek</designationCategory>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>O21_ST_Table3x3Animated</defName>
+		<label>federation infotable</label>
+		<graphicData>
+			<texPath>Things/Building/Federation/Decor/LCARSDesk/LCARSDesk_Inactive</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(3, 3)</drawSize>
+		</graphicData>
+		<uiIconScale>0.9</uiIconScale>
+		<statBases>
+			<MaxHitPoints>175</MaxHitPoints>
+			<WorkToBuild>3300</WorkToBuild>
+			<Mass>30</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>30</Beauty>
+		</statBases>
+        <comps>
+            <li Class="O21Toolbox.Animation.CompProperties_AnimationOverlay">
+                <damageThreshold>0.0</damageThreshold>
+                <idleWithFuel>false</idleWithFuel>
+                <settings>
+                    <li>
+                        <type>idle</type>
+                        <graphicPath>Things/Building/Federation/Decor/LCARSDesk/LCARSDesk</graphicPath>
+                        <frameCount>11</frameCount>
+                        <fps>11</fps>
+                    </li>
+                </settings>
+            </li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+        		<shortCircuitInRain>true</shortCircuitInRain>
+				<basePowerConsumption>100</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtFurniture</nameMaker>
+				<descriptionMaker>ArtDescription_Furniture</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+        </comps>
+		<size>(3,3)</size>
+		<tickerType>Normal</tickerType>
+		<costList>
+			<Steel>80</Steel>
+            <ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<rotatable>false</rotatable>
+		<building>
+			<buildingSizeCategory>Medium</buildingSizeCategory>
+		</building>
+		<designationCategory>O21_ST_StarTrek</designationCategory>
+	</ThingDef>
+
+</Defs>

@@ -31,7 +31,7 @@ Note: Currently still takes materials to craft things, this will change in futur
             <WorkTableWorkSpeedFactor>30.0</WorkTableWorkSpeedFactor>
 		</statBases>
 		<size>(3,1)</size>
-		<designationCategory>Production</designationCategory>
+		<designationCategory>O21_ST_StarTrek</designationCategory>
 		<passability>PassThroughOnly</passability>
 		<pathCost>70</pathCost>
 		<hasInteractionCell>True</hasInteractionCell>
@@ -62,7 +62,6 @@ Note: Currently still takes materials to craft things, this will change in futur
 		<researchPrerequisites>
 			<li>O21_ST_Dilithium</li>
 		</researchPrerequisites>
-		<designationHotKey>Misc7</designationHotKey>
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
 			<li>PlaceWorker_PreventInteractionSpotOverlap</li>

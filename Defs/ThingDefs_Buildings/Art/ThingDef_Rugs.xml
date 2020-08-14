@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<ThingDef ParentName="BuildingBase" Name="O21_ST_RugBase" Abstract="True">
+		<description>Simple decorative rug, adds some modest beauty</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+            <drawSize>(2, 2)</drawSize>
+		</graphicData>
+		<uiIconScale>0.5</uiIconScale>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>200</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>10</Beauty>
+		</statBases>
+        <size>(2, 2)</size>
+		<rotatable>true</rotatable>
+		<useHitPoints>true</useHitPoints>
+		<designationCategory>O21_ST_StarTrek</designationCategory>
+		<passability>Standable</passability>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+		<costStuffCount>50</costStuffCount>
+	</ThingDef>
+	
+	<ThingDef ParentName="O21_ST_RugBase">
+		<defName>O21_ST_Rug_MACO</defName>
+		<label>rug (maco)</label>
+		<graphicData>
+			<texPath>Things/Building/Federation/Decor/MACO_Rug</texPath>
+		</graphicData>
+	</ThingDef>
+	
+	<ThingDef ParentName="O21_ST_RugBase">
+		<defName>O21_ST_Rug_UE</defName>
+		<label>rug (united earth)</label>
+		<graphicData>
+			<texPath>Things/Building/Federation/Decor/UE_Rug</texPath>
+		</graphicData>
+	</ThingDef>
+	
+	<ThingDef ParentName="O21_ST_RugBase">
+		<defName>O21_ST_Rug_UESPA</defName>
+		<label>rug (united earth spa)</label>
+		<graphicData>
+			<texPath>Things/Building/Federation/Decor/UESPA_Rug</texPath>
+		</graphicData>
+	</ThingDef>
+	
+	<ThingDef ParentName="O21_ST_RugBase">
+		<defName>O21_ST_Rug_UFOP</defName>
+		<label>rug (federation)</label>
+		<graphicData>
+			<texPath>Things/Building/Federation/Decor/UFOP_Rug</texPath>
+		</graphicData>
+	</ThingDef>
+	
+	<ThingDef ParentName="O21_ST_RugBase">
+		<defName>O21_ST_Rug_SF</defName>
+		<label>rug (starfleet)</label>
+		<graphicData>
+			<texPath>Things/Building/Federation/Decor/UFOP_SF_Rug</texPath>
+		</graphicData>
+	</ThingDef>
+
+</Defs>

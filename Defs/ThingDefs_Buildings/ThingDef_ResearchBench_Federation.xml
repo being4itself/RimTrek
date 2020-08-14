@@ -32,9 +32,8 @@ Note: This acts as a Hi-Tech Research Bench and Multi-Analyser. You don't need e
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<hasInteractionCell>true</hasInteractionCell>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-		<designationCategory>Production</designationCategory>
+		<designationCategory>O21_ST_StarTrek</designationCategory>
 		<surfaceType>Item</surfaceType>
-		<designationHotKey>Misc4</designationHotKey>
 		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
 
 		<comps>

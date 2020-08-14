@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ 	<ThingDef ParentName="BuildingBase">
+		<defName>O21_ST_HolographicGlobe</defName>
+		<label>holographic globe</label>
+		<description>Projects a holographic globe. Provides a nice beauty boost.</description>
+		<category>Building</category>
+		<graphicData>
+			<texPath>Things/Building/Federation/Decor/PlanetHologram/Hologram_Inactive</texPath>
+			<shaderType>CutoutComplex</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(4, 4)</drawSize>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<passability>PassThroughOnly</passability>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Flammability>0.0</Flammability>
+			<Beauty>30</Beauty>
+		</statBases>
+		<costList>
+			<Steel>80</Steel>
+            <ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<pathCost>600</pathCost>
+		<tickerType>Normal</tickerType>
+		<selectable>true</selectable>
+		<size>(3,3)</size>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<comps>
+            <li Class="O21Toolbox.Animation.CompProperties_AnimationOverlay">
+                <damageThreshold>0.0</damageThreshold>
+                <idleWithFuel>false</idleWithFuel>
+                <settings>
+                    <li>
+                        <type>idle</type>
+                        <graphicPath>Things/Building/Federation/Decor/PlanetHologram/Hologram</graphicPath>
+                        <frameCount>24</frameCount>
+                        <fps>4</fps>
+                    </li>
+                </settings>
+            </li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+        		<shortCircuitInRain>true</shortCircuitInRain>
+				<basePowerConsumption>100</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtFurniture</nameMaker>
+				<descriptionMaker>ArtDescription_Furniture</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+		</comps>
+		<filthLeaving>Filth_RubbleBuilding</filthLeaving>
+		<rotatable>false</rotatable>
+		
+		<building>
+            <watchBuildingStandDistanceRange>2~7</watchBuildingStandDistanceRange>
+            <watchBuildingStandRectWidth>7</watchBuildingStandRectWidth>
+		</building>
+		<inspectorTabs>
+			<li>ITab_Art</li>
+		</inspectorTabs>
+
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<designationCategory>O21_ST_StarTrek</designationCategory>
+	</ThingDef>
+
+</Defs>
